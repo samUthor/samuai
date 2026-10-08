@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SamuAI - 3D Samurai Voice Support</title>
+
+    <!-- Google Fonts: Cinzel (Samurai display/headings) & Plus Jakarta Sans (Clean body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              cinzel: ['Cinzel', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              // Strict 5-Color Samurai Palette
+              // 1. Obsidian Urushi (Deep black lacquer background)
+              samurai: {
+                obsidian: '#08090d',
+                slate: '#171923',
+                vermilion: '#e11d48',
+                gold: '#d97706',
+                washi: '#f8fafc',
+              }
+            }
+          }
+        }
+      }
+    </script>
+        <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      h1, h2, h3, .font-cinzel {
+        font-family: 'Cinzel', serif;
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #08090d;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #272a38;
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d97706;
+      }
+    </style>
+  </head>
+  <body class="bg-[#08090d] text-slate-100 overflow-hidden select-none antialiased">
+    <div id="root" class="h-screen w-screen flex flex-col"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.js"></script></body>
+</html>
