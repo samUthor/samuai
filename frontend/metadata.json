@@ -1,0 +1,7 @@
+{
+  "name": "SamuAI - Friendly Samurai Specialist",
+  "description": "An interactive 3D samurai specialist with sharp wit, dry humor, and genuine friendliness. Delivers expert advice, technical problem solving, and order tracking out loud via webkitSpeechRecognition and Gemini 2.5 Flash.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
